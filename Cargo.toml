@@ -1,0 +1,18 @@
+[package]
+name = "acropolis-indexer-sample"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+clap = { version = "4", features = ["derive"] }
+futures = "0.3"
+hex = "0.4"
+pallas-addresses = "0.33"
+pallas-crypto = "0.33"
+pallas-network = "0.33"
+pallas-primitives = "0.33"
+pallas-traverse = "0.33"
+plutus-parser = { version = "0.1", default-features = false, features = ["derive", "pallas-v0_33"] }
+tokio = { version = "1", features = ["full"] }
